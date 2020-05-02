@@ -13,13 +13,16 @@ main {
 }
 
 footer {
-	position: fixed;
-	bottom: 0;
+	margin-top: 30px;
 	background-color: #2f00bd;
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	cursor: default;
+}
+
+#idx_ft {
+	margin-top: 220px;
 }
 
 footer h3 {
