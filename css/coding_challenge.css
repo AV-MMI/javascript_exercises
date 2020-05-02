@@ -1,6 +1,23 @@
+nav {
+	background-color: #3500D3;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+}
+
+nav a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 30px;
+	font-weight: 700;
+	padding: 5px;
+}
 .coding_box {
 	border: 3px solid #3500D3;
+	border-radios: 3px;
 	display: flex;
+	margin-bottom: 100px;
 }
 
 p {
