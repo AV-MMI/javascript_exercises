@@ -1,0 +1,35 @@
+.coding_box {
+	border: 3px solid #3500D3;
+	display: flex;
+}
+
+p {
+	padding: 15px 20px;
+}
+
+.column:org{
+	display: flex;
+	flex-direction: column;
+}
+
+#line {
+	margin: 0;
+	border: 2px solid #3500D3;
+}
+
+#p_coding_box {
+	margin-left: 50px;
+	margin-right: 50px	;
+}
+
+#btm_org_note {
+	justify-content: space-between;
+}
+
+.console {
+	color: orange;
+}
+
+.console span {
+	color: green;
+}

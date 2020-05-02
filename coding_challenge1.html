@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Coding Challenge 1</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/coding_challenge.css">
+	<script type="text/javascript" src="js/coding_challenge1.js"></script>
+</head>
+<body>
+	<main>
+		<div class="js_excs">
+			<h1>Coding Challenge 1</h1>
+		</div>
+		<div class="test">
+		<div id="p_coding_box">
+			<div class="btm_org" id="btm_org_note">
+				<span class="note">Coding Challenge 1</span>
+				<span class="note">Console</span>
+			</div>
+			<div class="btm_org">
+				<div class="coding_box">
+					<div class="column_org">
+						<p >Mark and John are trying to compare their BMI (Body Mass Index). which i calculated using the formula: BMI = mass / height**2 = mass / (height * height). (mass in kg and height in meter)
+						</p>
+						<ol>
+							<li>Store Mark's and John's mass and height in variables</li>
+							<li>Calculate both their BMIs</li>
+							<li>Create a boolean variable containing information about whether mark has a higher BMI than John</li>
+							<li>Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"</li>
+						</ol>
+					</div>
+
+					<div id="line"></div>
+					
+					<p>
+						<code>
+							let johnHeight, markHeight, johnMass, markMass, johnBMI, markBMI, comparisonBMI;<br><br>
+							//Height and Mass<br>
+							johnHeight = 1.95 //meters<br>
+							johnMass = 92 //kg<br>
+							markHeight = 1.69 //meters<br>
+							markMass = 78 //kg<br>
+							<br>
+							//BMI Calculation<br>
+							johnBMI = johnMass / (johnHeight**2); <br>
+							markBMI = markMass / (markHeight**2);<br>
+							<br>
+							//Comparison between both BMI<br>
+							comparisonBMI = (markBMI > johnBMI);<br>
+							<br>
+							//String print in the console<br>
+							console.log('MarkBMI: ' + markBMI);<br>
+							console.log('John BMI: ' + johnBMI);<br>
+							console.log('Is Mark\'s BMI higher than John\'s?' + ' ' + comparisonBMI);<br><br>
+					</code>
+					<code class="console">
+						<span>//</span>MarkBMI: 27.309968138370508<br>
+						<span>//</span>John BMI: 24.194608809993426<br>
+						<span>//</span>Is Mark's BMI higher than John's? true<br>
+					</code>
+				</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</main>
+</body>
+</html>
