@@ -1,3 +1,5 @@
+/*Classes*/
+
 nav {
 	background-color: #3500D3;
 	display: flex;
@@ -13,6 +15,7 @@ nav a {
 	font-weight: 700;
 	padding: 5px;
 }
+
 .coding_box {
 	border: 3px solid #3500D3;
 	border-radios: 3px;
@@ -22,6 +25,7 @@ nav a {
 
 p {
 	padding: 15px 20px;
+	width: 500px;
 }
 
 .column:org{
@@ -29,24 +33,48 @@ p {
 	flex-direction: column;
 }
 
-#line {
-	margin: 0;
-	border: 2px solid #3500D3;
+.console {
+	color: orange;
+	width: 2000px;
 }
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+ol li {
+  counter-increment: my-awesome-counter;
+  width: 500px;
+  margin-top: 10px;
+}
+
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: red;
+}
+
+/*ID's*/
 
 #p_coding_box {
 	margin-left: 50px;
 	margin-right: 50px	;
 }
 
+#highlighter {
+	color: #3F3FBF;
+}
+
+#line {
+	margin: 0;
+	border: 2px solid #3500D3;
+}
+
 #btm_org_note {
 	justify-content: space-between;
 }
 
-.console {
-	color: orange;
-}
-
-.console span {
+#c_strt {
 	color: green;
 }
+
