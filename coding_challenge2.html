@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Coding Challenge 2</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/coding_challenge.css">
+	<script type="text/javascript" src="js/coding_challenge2.js"></script>
+</head>
+<body>
+	<nav><a href="index.html">Let's go back!</a></nav>
+	<main>
+		<div class="js_excs">
+			<h1>Coding Challenge 2</h1>
+		</div>
+		<div class="test">
+		<div id="p_coding_box">
+			<div class="btm_org" id="btm_org_note">
+				<span class="note">Coding Challenge 2</span>
+				<span class="note">Console</span>
+			</div>
+			<div class="btm_org">
+				<div class="coding_box">
+					<div class="column_org">
+						<p>John and Mike both play basketball in different teams. In the latest 3 games, John's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and 123 points<br>
+						</p>
+						<ol>
+							<li> Calculate the average score for each team</li>
+							<li> Decide which teams wins in average (highest average score), and print the winner to the console. Also include the average score in the output.</li>
+							<li> Then change the scores to show different winners. Don't forget to take into account there might be a draw (the same average score)</li>
+							<li> <span id="highlighter">EXTRA:</span> Mary also plays basketball, and her team scored 97, 134, and 105 points. Like before log the average winner to the console. <span id="highlighter">HINT:</span> you will need the && operator to take the decision. If you can't solve this one, just watch the solution, it's no problem. :)</li>
+							<li> Like before, change the scores to generate different winners, keeping in mind there might be draws.</li>
+						</ol>
+					</div>
+
+					<div id="line"></div>
+					<p>
+					<code>
+						let johnScore, mikeScore, maryScore, averageJohnScore, averageMikeScore, averageMaryScore, highestAverageScore;<br>
+						<br>
+						//Declaration of player's team score.<br>
+						johnScore = 89 + 120 + 103;<br>
+						mikeScore = 116 + 94 + 123;<br>
+						maryScore = 97 + 134 + 105;<br>
+						<br>
+						//Calculations of average score for each team.<br>
+						averageJohnScore = (johnScore / 3);<br>
+						averageMikeScore = (mikeScore / 3);<br>
+						averageMaryScore = (maryScore / 3);<br>
+						<br>
+						//Calculations of which team is the winner<br>
+						if (averageJohnScore > averageMikeScore && averageJohnScore > averageMaryScore) {<br>	
+						  highestAverageScore = averageJohnScore;<br>
+						  console.log('The winner team is John\'s team!! with an average of: ' + highestAverageScore + ' points');<br>
+						  console.log('While Mike\'s average is ' + averageMikeScore + ' and Mary\'s average is ' + averageMaryScore);<br>
+						}<br>
+						<br>
+						else if (averageMikeScore > averageJohnScore && averageMikeScore > averageMaryScore) {<br>
+						  highestAverageScore = averageMikeScore;<br>
+						  console.log('The winner team is Mike\'s team!! with an average of: ' + highestAverageScore + ' points');<br>
+						  console.log('While John\'s average is ' + averageJohnScore + ' and Mary\'s average is ' + averageMaryScore);<br>
+						}<br>
+						<br>
+						else if (averageMaryScore > averageJohnScore && averageMaryScore > averageMikeScore) {<br>
+						  highestAverageScore = averageMaryScore;<br>
+						  console.log('The winner team is Mary\'s team!! with an average of: ' + highestAverageScore + ' points');<br>
+						  console.log('While John\'s average is ' + averageJohnScore + ' and Mike\'s average is ' + averageMikeScore);<br>
+						}<br>
+						<br>
+						else if (averageJohnScore == averageMikeScore && averageJohnScore > averageMaryScore) {<br>
+						  console.log('There is been a draw between John\'s and Mike\'s team!! with an average of ' + averageJohnScore + ' <br>points!!');<br>
+						}<br>
+						<br>
+						else if (averageMikeScore == averageMaryScore && averageMikeScore > averageJohnScore)  {<br>
+						  console.log('There is been a draw between Mike\'s and Mary\'s team!! with an average of ' + averageMikeScore + ' <br>points!!');<br>
+						}<br>
+						<br>
+						else if (averageMaryScore == averageJohnScore && averageMaryScore > averageMikeScore) {<br>
+						  console.log('There is been a draw between Mary\'s and John\'s team!! with an average of ' + averageMaryScore + ' <br>points!!');<br>
+						}<br>
+						<br>
+						else {<br>
+						  console.log('There have been a draw among the teams with an average score of: ' + averageJohnScore + ' points');<br>
+						}<br>
+					</code>
+					<code class="console">
+						<span id="c_strt">//</span><span>The winner team is Mary's team!! with an average of: 112 points</span><br>
+						<span id="c_strt">//</span><span>While John's average is 104 and Mike's average is 111</span><br>
+					</code>
+				</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</main>
+	<footer><h3>Aarón Villalobos</h3></footer>
+</body>
+</html>
